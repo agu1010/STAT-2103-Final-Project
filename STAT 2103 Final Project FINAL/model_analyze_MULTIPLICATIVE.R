@@ -108,20 +108,6 @@ for (elec in c('Senatorial','Gubernatorial','Presidential')) {
   print(sprintf("Results for %s elections are gathered", elec))
 }
 
-## T-test comparing the final point estimate of mu_b for the multiplicative model
-## and the estimate of mu_b for the additive original model
-
-multiplicative_point_estimates <- overall_measures_point_estimates
-multiplicative_point_estimates$mu_b
-
-originaldata_point_estimates
-
-?t.test
-
-originaldata_distribution
-
-
-
 
 # Write model results to the log file
 sink('~/multiplicative_analysis.tsv', append = TRUE)
