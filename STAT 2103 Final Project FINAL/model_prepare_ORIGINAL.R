@@ -32,41 +32,6 @@ preprocess_polls_f <- function(input_polls_data) {
 }
 
 
-
-
-
-## for data exploration, make RMSE histograms but with separate geographic regions
-
-
-
-
-#### IN THIS SECTION, CHANGE THE FIRST BUILT-IN FUNCTION TO SECTION OUT WHICH
-# SPECIFIC GEOGRAPHIC DIVISIONS YOU WANT, OR YOU CAN HONESTLY DIVIDE THE DATA
-# SET HOWEVER WAY YOU WANT AND YOU CAN CLAIM ITS A VALID EVALUATION
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Load data
 polls_main <- preprocess_polls_f( data.table( read.delim("../Documents/STAT 2103 Final Project Desktop/polls_main_dataset.tsv") ) )
 nrow(polls_main)
