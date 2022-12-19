@@ -44,23 +44,6 @@ election_level_results <- data.table()
 for (elec in c('Senatorial','Gubernatorial','Presidential')) {
   model_input_data_file <- sprintf("~/Downloads/STAT 2103 Final Project/Generated Data/stan_data_%s.RData", tolower(elec))
   load(model_input_data_file)
-  
-  
-  
-  
-  
-  
-  model_input_test <- sprintf("~/Downloads/STAT 2103 Final Project/Generated Data/stan_data_senatorial.RData")
-  load(model_input_test)
-  model_result_test <- sprintf("~/Downloads/STAT 2103 Final Project/stan_final_model_result_senatorial.RData")
-  load(model_result_test)
-  
-  
-  
-  
-  
-  
-  
   model_result_file <- sprintf('~/Downloads/STAT 2103 Final Project/stan_%s_result_%s.RData', tolower(stan_model), tolower(elec))
   # model_result_file <- sprintf('../data/stan_%s_result_%s_prior_inv_gamma.RData', tolower(stan_model), tolower(elec))
   load(model_result_file)
